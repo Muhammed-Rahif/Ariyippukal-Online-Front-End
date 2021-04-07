@@ -1,0 +1,307 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ariyippukal Online | Malayalam New Website</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+    <link rel="shortcut icon" href="./favicon.jpeg" type="image/x-icon">
+    
+    <!-- Axios cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+    <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+            <![endif]-->
+
+    <script>
+        window.onload = () => {
+            $("#nav-fixed").removeClass("slide-up").addClass("slide-down");
+        }
+    </script>
+</head>
+
+<body>
+
+    <header id="header">
+
+        <div id="nav">
+
+            <div id="nav-fixed" class="slide-up">
+                <div class="container">
+
+                    <div class="nav-logo">
+                        <a href="index.html" class="logo">
+                            <h2 class="logo">Ariyippukal Online</h2>
+                        </a>
+                    </div>
+
+
+                    <ul class="nav-menu nav navbar-nav">
+                        <li><a href="category.html">News</a></li>
+                        <li><a href="category.html">Latest</a></li>
+                        <!-- <li class="cat-1 anjali-font"><a href="category.html">സ്വയം എഴുതുക...</a></li>
+                        <li class="cat-2"><a href="category.html">JavaScript</a></li>
+                        <li class="cat-3"><a href="category.html">Css</a></li>
+                        <li class="cat-4"><a href="category.html">Jquery</a></li> -->
+                    </ul>
+
+
+                    <div class="nav-btns">
+                        <button class="aside-btn"><i class="fa fa-bars"></i></button>
+                        <button class="search-btn"><i class="fa fa-search"></i></button>
+                        <div class="search-form">
+                            <input class="search-input" type="text" name="search" placeholder="Enter Your Search ...">
+                            <button class="search-close"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div id="nav-aside">
+
+                <div class="section-row">
+                    <ul class="nav-aside-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Join Us</a></li>
+                        <li><a href="#">Advertisement</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+
+
+                <div id="sidebar-recent-posts" class="section-row">
+                    <h3>Recent Posts</h3>
+                </div>
+
+
+                <div class="section-row">
+                    <h3>Follow us</h3>
+                    <ul class="nav-aside-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+
+
+                <button class="nav-aside-close"><i class="fa fa-times"></i></button>
+
+            </div>
+
+        </div>
+
+
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <ul class="page-header-breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Contact</li>
+                        </ul>
+                        <h1>Contact</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="section">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-row">
+                        <h3>Contact Information</h3>
+                        <p>Hi there..!
+                            We are ready to contact you at any time... For any queries or inquiries you may contact us
+                            at the following email id or via text message... We will answer your questions.. If you find
+                            any bugs or errors do not forget to contact the developer.... Have a nice day..!
+                        </p>
+                        <ul class="list-style">
+                            <li>
+                                <p><strong>Email:</strong> <a href="mailto:example@example.com"">example@email.com</a></p>
+                            </li>
+                            <li>
+                                <p><strong>Phone:</strong> Not defined</p>
+                            </li>
+                            <li>
+                                <p><strong>Address:</strong> Mankada, Malappuram, India</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-md-5 col-md-offset-1">
+                                        <div class="section-row">
+                                            <h3>Send A Message</h3>
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <span>Email</span>
+                                                            <input class="input" type="email" name="email"
+                                                                placeholder="example@gmail.com">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-7">
+                                                        <div class="form-group">
+                                                            <span>Subject</span>
+                                                            <input class="input" type="text" name="subject"
+                                                                placeholder="Subject">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <textarea class="input" name="message"
+                                                                placeholder="Message"></textarea>
+                                                        </div>
+                                                        <button class="primary-button">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer id="footer">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="./">
+                                    <h3>Ariyippukal Online</h3>
+                                </a>
+                            </div>
+                            <ul class="footer-nav">
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Advertisement</a></li>
+                            </ul>
+                            <div class="footer-copyright">
+                                <span>©
+                                    Copyright
+                                    <script type="text/javascript" async=""
+                                        src="https://www.google-analytics.com/analytics.js"></script>
+                                    <script>document.write(new Date().getFullYear());</script> All rights reserved |
+                                    This website is created <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                        href="http://www.rahif.ml/" target="_blank">Muhammed Rahif</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-widget">
+                                    <h3 class="footer-title">About Us</h3>
+                                    <ul class="footer-links">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="#">Join Us</a></li>
+                                        <li><a href="contact.html">Contacts</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-widget">
+                                    <h3 class="footer-title">Catagories</h3>
+                                    <ul id="footer-categories" class="footer-links">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-widget">
+                            <h3 class="footer-title">Join our Newsletter</h3>
+                            <div class="footer-newsletter">
+                                <form>
+                                    <input class="input" type="email" name="newsletter" placeholder="Enter your email">
+                                    <button class="newsletter-btn"><i class="fa fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script>
+            axios.get("http://192.168.43.102:3000/get-recent-posts-by-no/100").then((response) => {
+                let recentPostsByNo = response.data;
+                recentPostsByNo.forEach(itm => {
+                    $("#sidebar-recent-posts").append(`
+                <div class="post post-widget">
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <div class="post-body">
+                            <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
+                        </div>
+                    </div>
+            `)
+                })
+            })
+        </script>
+        <script>
+            axios.get("http://192.168.43.102:3000/get-all-categories").then((response) => {
+                let allCategories = response.data;
+                allCategories.forEach(itm => {
+                    $("#footer-categories").append(`
+                <li><a href="category.html">${itm}</a></li>
+            `)
+                });
+            })
+        </script>
+
+        <!-- Jquery cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-23581568-13');
+        </script>
+
+
+</body>
+
+</html>
