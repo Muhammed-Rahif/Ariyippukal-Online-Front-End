@@ -316,13 +316,13 @@
     </footer>
 
     <script>
-        axios.get("http://192.168.43.102:3000/get-random-posts-by-no/2").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-random-posts-by-no/2").then((response) => {
             let randomPosts = response.data;
             randomPosts.forEach(itm => {
                 $("#top-posts").append(`
             <div class="col-md-6">
                     <div class="post post-thumb">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                         <div class="post-body">
                             <div class="post-meta">
                                 <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -337,13 +337,13 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-recent-posts-by-no/6").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-recent-posts-by-no/6").then((response) => {
             let recentPostsByNo = response.data;
             recentPostsByNo.forEach(itm => {
                 $("#recent-posts").append(`
                 <div class="col-md-4">
                     <div class="post">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                         <div class="post-body">
                             <div class="post-meta">
                                 <a class="post-category cat-1" href="category.html">${itm.postCategory}</a>
@@ -358,12 +358,12 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-random-posts-by-no/1").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-random-posts-by-no/1").then((response) => {
             let randomPosts = response.data;
             randomPosts.forEach(itm => {
                 $("#unique-post").append(`
                 <div class="post post-thumb">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-3" href="category.html">${itm.postCategory}</a>
@@ -377,13 +377,13 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-random-posts-by-no/6").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-random-posts-by-no/6").then((response) => {
             let randomPosts = response.data;
             randomPosts.forEach(itm => {
                 $("#6-posts").append(`
                 <div class="col-md-6">
                             <div class="post">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-4" href="category.html">${itm.postCategory}</a>
@@ -398,12 +398,12 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-most-read-posts-by-no/4").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-most-read-posts-by-no/4").then((response) => {
             let mostReadPosts = response.data;
             mostReadPosts.forEach(itm => {
                 $("#sidebar-most-read").append(`
                 <div class="post post-widget">
-                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                             <div class="post-body">
                                 <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
                             </div>
@@ -413,12 +413,12 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-featured-posts-by-no/2").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-featured-posts-by-no/2").then((response) => {
             let featuredPostsByNo = response.data;
             featuredPostsByNo.forEach(itm => {
                 $("#sidebar-featured").append(`
                 <div class="post post-thumb">
-                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                             <div class="post-body">
                                 <div class="post-meta">
                                     <a class="post-category cat-3" href="category.html">${itm.postCategory}</a>
@@ -432,13 +432,13 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-featured-posts-by-no/4").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-featured-posts-by-no/4").then((response) => {
             let allFeaturedPosts = response.data;
             allFeaturedPosts.forEach(itm => {
                 $("#featured-posts").append(`
                 <div class="col-md-4">
                     <div class="post">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                         <div class="post-body">
                             <div class="post-meta">
                                 <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -453,13 +453,13 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-most-read-posts-by-no/4").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-most-read-posts-by-no/4").then((response) => {
             let mostReadPostsByNo = response.data;
             mostReadPostsByNo.forEach(itm => {
                 $("#most-read").append(`
                 <div class="col-md-12">
                             <div class="post post-row">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -492,12 +492,12 @@
                             </div>
                         </div>
             `);
-            axios.get("http://192.168.43.102:3000/get-all-post").then((response) => {
+            axios.get("https://ariyippukal-online.herokuapp.com/get-all-post").then((response) => {
                 response.data.forEach(itm => {
                     $("#all-posts-section .row").append(`
                     <div class="col-md-12">
                             <div class="post post-row">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -513,7 +513,7 @@
         }
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-all-categories").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-all-categories").then((response) => {
             let allCategories = response.data;
             allCategories.forEach(itm => {
                 $("#footer-categories").append(`
@@ -523,7 +523,7 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-all-categories").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-all-categories").then((response) => {
             let allCategories = response.data;
             allCategories.forEach(itm => {
                 $("#category-tags").append(`
@@ -533,7 +533,7 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-all-categories").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-all-categories").then((response) => {
             let allCategories = response.data;
             allCategories.forEach(itm => {
                 $("#category-tags-2").append(`
@@ -543,12 +543,12 @@
         })
     </script>
     <script>
-        axios.get("http://192.168.43.102:3000/get-recent-posts-by-no/100").then((response) => {
+        axios.get("https://ariyippukal-online.herokuapp.com/get-recent-posts-by-no/100").then((response) => {
             let recentPostsByNo = response.data;
             recentPostsByNo.forEach(itm => {
                 $("#sidebar-recent-posts").append(`
                 <div class="post post-widget">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                         <div class="post-body">
                             <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
                         </div>

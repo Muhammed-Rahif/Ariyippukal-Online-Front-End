@@ -260,12 +260,12 @@
         </footer>
 
         <script>
-            axios.get("http://192.168.43.102:3000/get-recent-posts-by-no/100").then((response) => {
+            axios.get("https://ariyippukal-online.herokuapp.com/get-recent-posts-by-no/100").then((response) => {
                 let recentPostsByNo = response.data;
                 recentPostsByNo.forEach(itm => {
                     $("#sidebar-recent-posts").append(`
                 <div class="post post-widget">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="http://192.168.43.102:3000/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
                         <div class="post-body">
                             <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
                         </div>
@@ -275,7 +275,7 @@
             })
         </script>
         <script>
-            axios.get("http://192.168.43.102:3000/get-all-categories").then((response) => {
+            axios.get("https://ariyippukal-online.herokuapp.com/get-all-categories").then((response) => {
                 let allCategories = response.data;
                 allCategories.forEach(itm => {
                     $("#footer-categories").append(`
