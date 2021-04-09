@@ -21,8 +21,12 @@
     <link rel="shortcut icon" href="./favicon.jpeg" type="image/x-icon">
 
     <script>
-        window.onload = () => {
+        window.onload = async () => {
             $("#nav-fixed").removeClass("slide-up").addClass("slide-down");
+            setTimeout(() => {
+                $("#body").fadeOut();
+                $('link[title=preloader]')[0].disabled = true;
+            },3000)
         }
     </script>
 
@@ -33,7 +37,23 @@
 </head>
 
 <body>
+    <link rel="stylesheet" title="preloader" href="./css/loader-style.css">
+    <!-- Preloader body -->
+    <div id="body">
+        <div class="loader">
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+        </div>
+    </div>
 
+    <!-- Content -->
     <header id="header">
 
         <div id="nav">
@@ -254,7 +274,9 @@
                 <div class="col-md-5">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="./"><h3>Ariyippukal Online</h3></a>
+                            <a href="./">
+                                <h3>Ariyippukal Online</h3>
+                            </a>
                         </div>
                         <ul class="footer-nav">
                             <li><a href="#">Privacy Policy</a></li>
@@ -322,7 +344,7 @@
                 $("#top-posts").append(`
             <div class="col-md-6">
                     <div class="post post-thumb">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                         <div class="post-body">
                             <div class="post-meta">
                                 <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -343,7 +365,7 @@
                 $("#recent-posts").append(`
                 <div class="col-md-4">
                     <div class="post">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                         <div class="post-body">
                             <div class="post-meta">
                                 <a class="post-category cat-1" href="category.html">${itm.postCategory}</a>
@@ -363,7 +385,7 @@
             randomPosts.forEach(itm => {
                 $("#unique-post").append(`
                 <div class="post post-thumb">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-3" href="category.html">${itm.postCategory}</a>
@@ -383,7 +405,7 @@
                 $("#6-posts").append(`
                 <div class="col-md-6">
                             <div class="post">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-4" href="category.html">${itm.postCategory}</a>
@@ -403,7 +425,7 @@
             mostReadPosts.forEach(itm => {
                 $("#sidebar-most-read").append(`
                 <div class="post post-widget">
-                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                             <div class="post-body">
                                 <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
                             </div>
@@ -418,7 +440,7 @@
             featuredPostsByNo.forEach(itm => {
                 $("#sidebar-featured").append(`
                 <div class="post post-thumb">
-                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                            <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                             <div class="post-body">
                                 <div class="post-meta">
                                     <a class="post-category cat-3" href="category.html">${itm.postCategory}</a>
@@ -438,7 +460,7 @@
                 $("#featured-posts").append(`
                 <div class="col-md-4">
                     <div class="post">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                         <div class="post-body">
                             <div class="post-meta">
                                 <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -459,7 +481,7 @@
                 $("#most-read").append(`
                 <div class="col-md-12">
                             <div class="post post-row">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -497,7 +519,7 @@
                     $("#all-posts-section .row").append(`
                     <div class="col-md-12">
                             <div class="post post-row">
-                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                                <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                                 <div class="post-body">
                                     <div class="post-meta">
                                         <a class="post-category cat-2" href="category.html">${itm.postCategory}</a>
@@ -548,7 +570,7 @@
             recentPostsByNo.forEach(itm => {
                 $("#sidebar-recent-posts").append(`
                 <div class="post post-widget">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                         <div class="post-body">
                             <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
                         </div>

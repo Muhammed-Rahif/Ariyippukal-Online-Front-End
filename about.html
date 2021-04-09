@@ -16,7 +16,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
 
     <link rel="shortcut icon" href="./favicon.jpeg" type="image/x-icon">
-    
+
     <!-- Axios cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
 
@@ -26,14 +26,34 @@
             <![endif]-->
 
     <script>
-        window.onload = () => {
+        window.onload = async () => {
             $("#nav-fixed").removeClass("slide-up").addClass("slide-down");
+            setTimeout(() => {
+                $("#body").fadeOut();
+                $('link[title=preloader]')[0].disabled = true;
+            }, 3000)
         }
     </script>
 </head>
 
 <body>
+    <link rel="stylesheet" title="preloader" href="./css/loader-style.css">
+    <!-- Preloader body -->
+    <div id="body">
+        <div class="loader">
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+        </div>
+    </div>
 
+    <!-- Content -->
     <header id="header">
 
         <div id="nav">
@@ -272,7 +292,7 @@
             posts.forEach(itm => {
                 $("#most-read-posts").append(`
                 <div class="post post-widget">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                         <div class="post-body">
                             <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
                         </div>
@@ -287,7 +307,7 @@
             posts.forEach(itm => {
                 $("#sidebar-recent-posts").append(`
                 <div class="post post-widget">
-                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="https://ariyippukal-online.herokuapp.com/images/main-images/${itm.postId}.jpg" alt=""></a>
+                        <a class="post-img" href="blog-post.html?postId=${itm.postId}"><img src="data:${itm.mainImage.type};base64,${itm.mainImage.data}" alt="Image error!" /></a>
                         <div class="post-body">
                             <h3 class="post-title"><a href="blog-post.html?postId=${itm.postId}">${itm.mainTitle}</a></h3>
                         </div>

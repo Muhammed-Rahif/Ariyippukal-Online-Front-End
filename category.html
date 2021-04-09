@@ -22,14 +22,34 @@
             <![endif]-->
 
     <script>
-        window.onload = () => {
-            window.location.href="./"
+        window.onload = async () => {
+            $("#nav-fixed").removeClass("slide-up").addClass("slide-down");
+            setTimeout(() => {
+                $("#body").fadeOut();
+                $('link[title=preloader]')[0].disabled = true;
+            }, 3000)
         }
     </script>
 </head>
 
 <body>
+    <link rel="stylesheet" title="preloader" href="./css/loader-style.css">
+    <!-- Preloader body -->
+    <div id="body">
+        <div class="loader">
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+            <span class="loader-block"></span>
+        </div>
+    </div>
 
+    <!-- Content -->
     <header id="header">
 
         <div id="nav">
