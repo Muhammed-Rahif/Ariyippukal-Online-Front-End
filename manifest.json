@@ -3,7 +3,7 @@
   "background_color": "#000000",
   "display": "fullscreen",
   "scope": "/Ariyippukal-Online-Front-End/",
-  "start_url": "/index.html",
+  "start_url": "/Ariyippukal-Online-Front-End/index.html",
   "name": "Ariyippukal Online | Malayalam News Website",
   "short_name": "Ariyippukal Online",
   "description": "This is a news PWA website ",
