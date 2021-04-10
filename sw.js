@@ -45,6 +45,15 @@ const staticAssets = [
   "./img/widget-2.jpg",
   "./img/widget-3.jpg",
   "./img/widget-4.jpg",
+  "./PWA/images/logo (copy).png",
+  "./PWA/images/logo-64x64.png",
+  "./PWA/images/logo-96x96.png",
+  "./PWA/images/logo-128x128.png",
+  "./PWA/images/logo-192x192.png",
+  "./PWA/images/logo-512x512.png",
+  "./PWA/images/logo.jpg",
+  "./PWA/images/logo.png",
+  "./PWA/images/logo1.png",
 ];
 workbox.precaching.precache(staticAssets);
 workbox.routing.registerRoute(
