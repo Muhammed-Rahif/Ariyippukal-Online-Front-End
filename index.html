@@ -20,13 +20,20 @@
 
     <link rel="shortcut icon" href="./favicon.jpeg" type="image/x-icon">
 
+    <!-- PWA -->
+    <link rel="apple-touch-icon" href="./PWA/logo.jpg">
+    <meta name="apple-mobile-web-app-status-bar" content="#000000">
+    <meta name="theme-color" content="#000000">
+    <script src="./script.js"></script>
+    <link rel="manifest" href="./manifest.json">
+
     <script>
         window.onload = async () => {
             $("#nav-fixed").removeClass("slide-up").addClass("slide-down");
             setTimeout(() => {
                 $("#body").fadeOut();
                 $('link[title=preloader]')[0].disabled = true;
-            },3000)
+            }, 3000)
         }
     </script>
 
@@ -587,7 +594,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <!-- <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script> -->
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
