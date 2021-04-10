@@ -1,5 +1,5 @@
-// importScripts("https://storage.googleapis.com/workbox-cdn/releases/6.1.1/workbox-sw.js");
-importScripts("./node_modules/workbox-sw/build/workbox-sw.js");
+// importScripts("./node_modules/workbox-sw/build/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/6.1.1/workbox-sw.js");
 
 const staticAssets = [
   "./index.html",
